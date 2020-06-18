@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加教师</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/register-login.css">
+	<link rel="icon" href="../static/images/logo.ico" type="image/x-icon"/>
+	<style>
+        #return{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+	<div style = 'text-align: right;'><font color="#4169E1" size="5"><a id="return" href="{{url_for('manageTeacher')}}">返回<a/></font></div>
+	<br/>
+	<form method="post">
+			<div class="login form">
+				<div class="group">
+					<div class="group-ipt tea_name">
+						<input type="text" name="tea_name" id="tea_name" class="ipt" placeholder="输入添加用户名字" required>
+					</div>
+					<div class="group-ipt sex">
+						<input type="text" name="sex" id="password" class="ipt" placeholder="输入添加用户性别" required>
+					</div>
+					<div class="group-ipt tea_id">
+						<input type="text" name="tea_id" id="password" class="ipt" placeholder="输入添加用户学工号" required>
+					</div>
+					<div class="group-ipt department">
+						<input type="text" name="department" id="password" class="ipt" placeholder="输入添加用户学院/学部" required>
+					</div>
+					<div class="group-ipt major">
+						<input type="text" name="major" id="password" class="ipt" placeholder="输入添加用户方向" required>
+					</div>
+					<div class="group-ipt password">
+						<input type="text" name="password" id="password" class="ipt" placeholder="输入添加用户登录密码" required>
+					</div>
+					<div class="group-ipt phone">
+						<input type="text" name="phone" id="password" class="ipt" placeholder="输入添加用户电话" required>
+					</div>
+					<div class="group-ipt email">
+						<input type="text" name="email" id="password" class="ipt" placeholder="输入添加用户邮箱" required>
+					</div>
+					<div class="group-ipt title">
+						<input type="text" name="title" id="password" class="ipt" placeholder="输入添加用户职称" required>
+					</div>
+				</div>
+				<div class="button">
+					<button type="submit" class="login-btn register-btn" id="button">添加教师</button>
+				</div>
+			</div>
+		</form>
+</body>
+</html>

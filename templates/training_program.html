@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>培养计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/register-login.css">
+    <link rel="icon" href="../static/images/logo.ico" type="image/x-icon"/>
+    <style>
+        .a{
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        }
+        #return{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div style = 'text-align: center;'><font color="#4169E1" size="10">请选择你要查看的方向</font></div>
+<div style = 'text-align: right;'><font color="#4169E1" size="5"><a id="return" href="{{url_for('index')}}">返回<a/></font></div>
+<div class="a">
+    <div class="app">
+
+    <div style="display:inline-block;"> <a href="{{ url_for('science') }}"><button type="submit" class="login-btn register-btn" id="button", style="width: 150px">科学</button></a></div>
+
+    <div style="display:inline-block;margin-left:10px;margin-top:400px"> <a href="{{ url_for('information') }}"><button type="submit" class="login-btn register-btn" id="button", style="width: 150px">信息</button></a></div>
+
+    <div style="display:inline-block;margin-left:10px;"> <a href="{{ url_for('engineering') }}"><button type="submit" class="login-btn register-btn" id="button", style="width: 150px">工程</button></a></div>
+
+    </div>
+    <br/>
+</div>
+</body>
+</html>

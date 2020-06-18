@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查找教师</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/register-login.css">
+    <link rel="icon" href="../static/images/logo.ico" type="image/x-icon"/>
+    <style>
+        #return{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div style = 'text-align: right;'><font color="#4169E1" size="5"><a id="return" href="{{url_for('manageTeacher')}}">返回<a/></font></div>
+    <br/>
+    <form method="post">
+        <div class="login form">
+            <div class="group">
+                <div class="group-ipt tea_id">
+                    <input type="text" name="tea_id" id="tea_id" class="ipt" placeholder="输入查找用户的教工号" required>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit" class="login-btn register-btn" id="button">查找教师</button>
+            </div>
+        </div>
+        <br/>
+
+        <table style = 'text-align: center; width: 100%' border='1'>
+        
+            {% for message in result %}
+                <tr><th>姓名</th><th>性别</th><th>教工号</th><th>院系</th><th>专业</th><th>密码</th><th>电话</th><th>邮箱</th><th>职称</th></tr>
+                <tr><td>{{  message[0]  }}</td><td>{{  message[1]  }}</td><td>{{  message[2]  }}</td><td>{{  message[3]  }}</td><td>{{  message[4]  }}</td><td>{{  message[5]  }}</td><td>{{  message[6]  }}</td><td>{{  message[7]  }}</td><td>{{  message[8]  }}</td></tr>
+            {% endfor %}
+        </table>
+    </form>
+</body>
+</html>

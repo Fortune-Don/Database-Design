@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑课程</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/register-login.css">
+    <link rel="icon" href="../static/images/logo.ico" type="image/x-icon"/>
+    <style>
+        #return{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div style = 'text-align: right;'><font color="#4169E1" size="5"><a id="return" href="{{url_for('manageLecture')}}">返回<a/></font></div>
+    <br/>
+    <form method="post">
+            <div class="login form">
+                <div class="group">
+                    <div class="group-ipt lec_id">
+                        <input type="text" name="lec_id" id="lec_id" class="ipt" placeholder="输入编辑课程ID" required>
+                    </div>
+                </div>
+                <br>
+                <div class="group">
+                    <div class="group-ipt ad_year">
+                        <input type="text" name="ad_year" id="ad_year" class="ipt" placeholder="输入年级" required>
+                    </div>
+                    <div class="group-ipt major">
+                        <input type="text" name="major" id="password" class="ipt" placeholder="输入专业" required>
+                    </div>
+                    <div class="group-ipt classification">
+                        <input type="text" name="classification" id="password" class="ipt" placeholder="输入类别" required>
+                    </div>
+                    <div class="group-ipt lec_has">
+                        <input type="text" name="lec_has" id="password" class="ipt" placeholder="输入编号" required>
+                    </div>
+                    <div class="group-ipt lec_name">
+                        <input type="text" name="lec_name" id="password" class="ipt" placeholder="输入课程名字" required>
+                    </div>
+                    <div class="group-ipt tea_id">
+                        <input type="text" name="tea_id" id="password" class="ipt" placeholder="输入教工号" required>
+                    </div>
+                    <div class="group-ipt tea_name">
+                        <input type="text" name="tea_name" id="password" class="ipt" placeholder="输入教师姓名" required>
+                    </div>
+                    <div class="group-ipt credit">
+                        <input type="text" name="credit" id="password" class="ipt" placeholder="输入学分" required>
+                    </div>
+                    <div class="group-ipt total_hour">
+                        <input type="text" name="total_hour" id="password" class="ipt" placeholder="输入课时" required>
+                    </div>
+                    <div class="group-ipt start_time">
+                        <input type="text" name="start_time" id="password" class="ipt" placeholder="输入开始时间" required>
+                    </div>
+                    <div class="group-ipt end_time">
+                        <input type="text" name="end_time" id="password" class="ipt" placeholder="输入结束时间" required>
+                    </div>
+                    <div class="group-ipt lec_time">
+                        <input type="text" name="lec_time" id="password" class="ipt" placeholder="输入教学时间" required>
+                    </div>
+                    <div class="group-ipt MAX_STUDENTS">
+                        <input type="text" name="MAX_STUDENTS" id="password" class="ipt" placeholder="输入最大学生数" required>
+                    </div>
+                    <div class="group-ipt semester">
+                        <input type="text" name="semester" id="password" class="ipt" placeholder="输入开课学期" required>
+                    </div>
+                    <div class="group-ipt is_required">
+                        <input type="text" name="is_required" id="password" class="ipt" placeholder="输入是否必修" required>
+                    </div>
+                    <div class="group-ipt department">
+                        <input type="text" name="department" id="password" class="ipt" placeholder="输入开课院系" required>
+                    </div>
+                    <div class="group-ipt mark">
+                        <input type="text" name="mark" id="password" class="ipt" placeholder="输入课程备注" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="login-btn register-btn" id="button">编辑课程</button>
+                </div>
+            </div>
+        </form>
+</body>
+</html>

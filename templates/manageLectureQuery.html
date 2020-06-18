@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查找课程</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/register-login.css">
+    <link rel="icon" href="../static/images/logo.ico" type="image/x-icon"/>
+    <style>
+        #return{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div style = 'text-align: right;'><font color="#4169E1" size="5"><a id="return" href="{{url_for('manageLecture')}}">返回<a/></font></div>
+    <br/>
+    <form method="post">
+        <div class="login form">
+            <div class="group">
+                <div class="group-ipt lec_id">
+                    <input type="text" name="lec_id" id="lec_id" class="ipt" placeholder="输入查找课程的课程号" required>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit" class="login-btn register-btn" id="button">查找课程</button>
+            </div>
+        </div>
+        <br/>
+
+        <table style = 'text-align: center; width: 100%' border='1'>
+            {% for message in result %}
+                <tr><th>年级</th><th>专业</th><th>类别</th><th>课程编号</th><th>编号</th><th>课程名字</th><th>教工号</th><th>教师姓名</th><th>学分</th><th>课时</th><th>开始时间</th><th>结束时间</th><th>教学时间</th><th>最大学生数</th><th>开课学期</th><th>选修/必修</th><th>开课院系</th><th>课程备注</th></tr>
+                <tr><td>{{  message[0]  }}</td><td>{{  message[1]  }}</td><td>{{  message[2]  }}</td><td>{{  message[3]  }}</td><td>{{  message[4]  }}</td><td>{{  message[5]  }}</td><td>{{  message[6]  }}</td><td>{{  message[7]  }}</td><td>{{  message[8]  }}</td><td>{{  message[9]  }}</td><td>{{  message[10]  }}</td><td>{{  message[11]  }}</td><td>{{  message[12]  }}</td><td>{{  message[13]  }}</td><td>{{  message[14]  }}</td><td>{{  message[15]  }}</td><td>{{  message[16]  }}</td><td>{{  message[17]  }}</td></tr>
+            {% endfor %}
+        </table>
+    </form>
+</body>
+</html>

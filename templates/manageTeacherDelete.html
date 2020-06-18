@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>删除教师</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/register-login.css">
+    <link rel="icon" href="../static/images/logo.ico" type="image/x-icon"/>
+    <style>
+        #return{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div style = 'text-align: right;'><font color="#4169E1" size="5"><a id="return" href="{{url_for('manageTeacher')}}">返回<a/></font></div>
+    <br/>
+    <form method="post">
+        <div class="login form">
+            <div class="group">
+                <div class="group-ipt tea_id">
+                    <input type="text" name="tea_id" id="tea_id" class="ipt" placeholder="输入删除用户学工号" required>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit" class="login-btn register-btn" id="button">删除教师</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

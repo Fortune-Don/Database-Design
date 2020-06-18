@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>删除课程</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/register-login.css">
+    <link rel="icon" href="../static/images/logo.ico" type="image/x-icon"/>
+    <style>
+        #return{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div style = 'text-align: right;'><font color="#4169E1" size="5"><a id="return" href="{{url_for('manageLecture')}}">返回<a/></font></div>
+    <br/>
+    <form method="post">
+        <div class="login form">
+            <div class="group">
+                <div class="group-ipt lec_id">
+                    <input type="text" name="lec_id" id="lec_id" class="ipt" placeholder="输入删除课程ID" required>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit" class="login-btn register-btn" id="button">删除课程</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
