@@ -5,13 +5,13 @@
 * 将 config.py 文件中的MySql密码替换成本机数据库密码
 
 ## 数据库操作步骤
-* 1. 登录自己的MySql数据库
+* 登录自己的MySql数据库
 
   >mysql -u 'root' -p
   >
   >Enter password:
 
-* 2. 插入数据到数据库
+* 插入数据到数据库
 
   >create database studenttrainplan;
   >
