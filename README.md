@@ -6,22 +6,22 @@
 
 ## 数据库操作步骤
 * 1. 登录自己的MySql数据库
-mysql -u 'root' -p
-Enter password:
+>mysql -u 'root' -p
+>Enter password:
+
 * 2. 插入数据到数据库
---drop database studenttrainplan;
-create database studenttrainplan;
-use studenttrainplan;
-source table.sql;
-set SESSION sql_mode='';
-set names 'utf8';
---show variables like "%char%";
-source Student.sql;
-source Stu_Login.sql;
-source Lecture.sql;
-source Class.sql;
-source stu_plan.sql;
-source Teacher.sql;
+
+>create database studenttrainplan;
+>use studenttrainplan;
+>source table.sql;
+>set SESSION sql_mode='';
+>set names 'utf8';
+>source Student.sql;
+>source Stu_Login.sql;
+>source Lecture.sql;
+>source Class.sql;
+>source stu_plan.sql;
+>source Teacher.sql;
 
 ## 运行方法
 * 1. 运行 main.py
